@@ -1,0 +1,287 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    // font-family: "Microsoft YaHei","Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+label {
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+//main-container全局样式
+.app-main {
+    min-height: 100%
+}
+
+.app-container {
+    padding: 10px;
+    margin-bottom: 100px;
+    background: #fff;
+}
+
+.app-pager {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.content {
+    font-size: 14px;
+    flex-wrap: wrap;
+    // border-top: 1px solid #e4e7ed;
+    // border-left: 1px solid #e4e7ed;
+}
+
+.content .el-col-8 {
+    border-bottom: 1px solid #e4e7ed;
+    border-right: 1px solid #e4e7ed;
+}
+
+.contenter {
+    padding: 10px;
+    display: flex;
+}
+
+.contenter span:first-child {
+    padding-right: 10px;
+    width: 140px;
+    display: inline-block;
+    font-weight: bold
+}
+
+.contenter span:last-child {
+    display: inline-block;
+    word-break: break-all;
+    width: 60%;
+    color: #666
+}
+
+.contenter span img {
+    width: 60px;
+    height: 60px;
+}
+
+.tabs_global {
+    border: 1px solid #e4e7ed;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #fff
+}
+
+.tabs_global h3 {
+    margin: 0;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    // border-top:2px solid #3c8dbc;
+    // border-bottom: 2px solid #eee;
+    border-right: 1px solid #3c8dbc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    background: #3c8dbc;
+    color: #fff;
+    font-size: 14px
+}
+
+.el-table td, .el-table th {
+    padding: 5px 0 !important;
+}
+
+.vue-treeselect__control {
+    height: 40px !important;
+}
+
+.vue-treeselect__placeholder, .vue-treeselect__single-value {
+    line-height: 40px !important;
+}
+
+.el-button--mini, .el-button--mini.is-round {
+    padding: 5px 10px !important;
+}
+
+.el-table thead {
+    color: #333333
+}
+
+.el-table th.gutter {
+    display: table-cell !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+//.el-input__inner {
+//    width: 280px;
+//}
+
+.el-textarea__inner {
+    width: 280px;
+}
+
+.el-pagination .el-input__inner {
+    width: 100%;
+}
+
+.le_form .el-form-item {
+    margin-bottom: 0;
+}
+
+.le_form_valid .el-form-item {
+    margin-bottom: 15px;
+}
+
+.item-btm {
+    margin-bottom: 10px;
+}
+
+.item-top {
+    margin-top: 10px;
+}
+
+.el-button--small, .el-button--small.is-round {
+    padding: 7px 10px;
+}
+
+.el-dialog__body {
+    padding: 0 20px;
+}
+
+.dialoger {
+    .el-input {
+        width: auto;
+    }
+}
+
+.le_input .el-input__inner {
+    width: 280px;
+}
+
+.le_main {
+    margin-bottom: 15px;
+
+    p {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    * {
+        font-size: 14px;
+    }
+
+    h3 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #409EFF;
+        margin: 0;
+    }
+
+    ul, li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contentInfo {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px 0;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            width: 33%;
+            padding: 0 10px;
+            border: 1px solid #eee;
+            margin: 0 0 -1px -1px;
+
+            p:first-child {
+                width: 150px;
+                color: #333;
+            }
+
+            p:last-child {
+                color: #777;
+                width: 80%;
+            }
+        }
+    }
+}
+
+.le_operation {
+    position: fixed;
+    bottom: 35px;
+}
+
+.le_form_op {
+    margin-top: 10px;
+}
+
+.le_right{
+    margin: 0;
+    text-align: right;
+}
+
+.le_form_item{
+    width: 280px;
+    color: #777;
+}
+
